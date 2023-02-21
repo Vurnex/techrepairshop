@@ -1,0 +1,32 @@
+.header-container {
+
+    display: flex;
+    justify-content: space-between;
+    background-color: #adddff;
+}
+
+.h-location {
+
+
+    ul {
+
+        list-style: none;
+    }
+}
+
+.h-contact {
+
+    ul {
+
+        display: flex;
+        gap: 2em;
+        list-style: none;
+
+    }
+    
+}
+
+nav {
+
+    background-color: #e3f2fd;
+}
