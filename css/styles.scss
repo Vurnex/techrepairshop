@@ -32,6 +32,7 @@ html {
         display: flex;
         gap: 2em;
         list-style: none;
+        flex-wrap: wrap;
 
     }
     
@@ -57,10 +58,11 @@ html {
         text-decoration: none;
     }
 
-    .site-name{
+}
 
-        text-transform: uppercase;
-    }
+.site-name{
+
+    text-transform: uppercase;
 }
 
 #nav-mobile {
@@ -71,6 +73,22 @@ html {
 
         display: none;
     }
+
+    ul {
+
+        display: flex;
+        list-style: none;
+        gap: 1em;
+
+    }
+
+    ul > li > a {
+
+        text-decoration: none;
+        color: black;
+    }
+
+
 }
 
 
