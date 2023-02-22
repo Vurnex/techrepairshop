@@ -3,6 +3,9 @@ html {
     --header-color-first: #adddff;
     --header-color-second: #e3f2fd;
     --color-main: #f8f9fa;
+    --color-secondary: #6c757d;
+
+    --padding-sides: 1em 5em 1em 5em;
 
 }
 
@@ -14,6 +17,7 @@ html {
     display: flex;
     justify-content: space-between;
     background-color: var(--header-color-first);
+    padding: var(--padding-sides);
 }
 
 .h-location {
@@ -42,7 +46,7 @@ html {
 
     justify-content: space-between;
     background-color: var(--header-color-second);
-    padding: 1em;
+    padding: var(--padding-sides) !important;
     font-weight: bold;
 
     ul {
@@ -89,6 +93,53 @@ html {
     }
 
 
+}
+
+.intro {
+
+    background-color: var(--color-main);
+}
+
+.intro-container {
+
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding-sides);
+    padding-left: 7em;
+}
+
+.intro-first {
+
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 50%;
+}
+
+.int-first-header-cont {
+
+    h6 {
+
+        text-transform: uppercase;
+    }
+
+}
+
+.int-second-header-cont {
+
+    h1 {
+
+        font-weight: bold;
+    }
+}
+
+.int-para-cont {
+
+    p {
+
+        color: var(--color-secondary);
+
+    }
 }
 
 
