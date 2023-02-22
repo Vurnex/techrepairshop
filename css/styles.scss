@@ -1,8 +1,19 @@
+html {
+
+    --header-color-first: #adddff;
+    --header-color-second: #e3f2fd;
+    --color-main: #f8f9fa;
+
+}
+
+
+
+
 .header-container {
 
     display: flex;
     justify-content: space-between;
-    background-color: #adddff;
+    background-color: var(--header-color-first);
 }
 
 .h-location {
@@ -26,7 +37,59 @@
     
 }
 
-nav {
+.nav {
 
-    background-color: #e3f2fd;
+    justify-content: space-between;
+    background-color: var(--header-color-second);
+    padding: 1em;
+    font-weight: bold;
+
+    ul {
+
+        display: flex;
+        list-style: none;
+        gap: 2em;
+
+    }
+
+    ul > li > a {
+
+        text-decoration: none;
+    }
+
+    .site-name{
+
+        text-transform: uppercase;
+    }
+}
+
+#nav-mobile {
+
+    display: none;
+
+    .header-btn {
+
+        display: none;
+    }
+}
+
+
+@media (max-width: 660px) {
+
+    .nav {
+
+        display: none !important;
+    }
+
+    #nav-mobile {
+
+        display: flex;
+        background-color: #e3f2fd;
+        color: black;
+
+        .header-btn {
+
+            display: block;
+        }
+    }
 }
