@@ -8,6 +8,8 @@ html {
     --color-secondary-dark: #e1e1ff;
     --color-secondary-after: #e1e1ff;
 
+    --color-abt2-txt: #f0ffff;
+
     --padding-sides: 1em 5em 1em 5em;
 
     scroll-behavior: smooth;
@@ -139,7 +141,7 @@ html {
     }
 }
 
-.int-para-cont, .abt-para-cont, .abt2-para-cont {
+.int-para-cont, .abt-para-cont {
 
     p {
 
@@ -179,10 +181,26 @@ html {
     text-align: center;
 }
 
+.abt2-first-header-cont, .abt2-second-header-cont, .abt2-para-cont {
+
+    color: var(--color-abt2-txt);
+
+}
+
 .about2-info-cont {
 
     display: flex;
     gap: 1em;
+
+    .card > .card-body > i {
+
+        border: 1px solid;
+        padding: 0.5em;
+        border-radius: 30px;
+        font-size: 30px;
+        margin-bottom: 0.5em;
+        color: var(--bs-blue);
+    }
 }
 
 @media (max-width: 660px) {
