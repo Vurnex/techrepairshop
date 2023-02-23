@@ -59,34 +59,39 @@ html {
   color: black;
 }
 
-.intro {
+.intro, .about {
   background-color: var(--color-main);
 }
 
-.intro-container {
+.intro-container, .about-container {
   display: flex;
   justify-content: space-between;
   padding: var(--padding-sides);
   padding-left: 7em;
 }
 
-.intro-first {
+.intro-first, .about-first {
   display: flex;
   flex-direction: column;
   gap: 2em;
   width: 50%;
 }
 
-.int-first-header-cont h6 {
+.int-first-header-cont h6, .abt-first-header-cont h6 {
   text-transform: uppercase;
-}
-
-.int-second-header-cont h1 {
   font-weight: bold;
 }
 
-.int-para-cont p {
+.int-second-header-cont h1, .abt-second-header-cont h1 {
+  font-weight: bold;
+}
+
+.int-para-cont p, .abt-para-cont p {
   color: var(--color-secondary);
+}
+
+.about-image-container img {
+  width: 500px;
 }
 
 @media (max-width: 660px) {
