@@ -5,6 +5,8 @@ html {
     --color-main: #f8f9fa;
     --color-secondary: #6c757d;
 
+    --color-about-bg: #e9ecef;
+
     --color-secondary-dark: #e1e1ff;
     --color-secondary-after: #e1e1ff;
 
@@ -99,7 +101,7 @@ html {
 
 }
 
-.intro, .about, .about2 {
+.intro, .about, .about2, .services {
 
     display: flex;
     align-items: center;
@@ -107,7 +109,8 @@ html {
     min-height: 100vh;
 }
 
-.intro-container, .about-container, .about2-container {
+.intro-container, .about-container, .about2-container, 
+.services-container {
 
     display: flex;
     justify-content: space-between;
@@ -115,7 +118,7 @@ html {
     padding-left: 7em;
 }
 
-.intro-first, .about-first, .about2-first {
+.intro-first, .about-first, .about2-first, .services-first {
 
     display: flex;
     flex-direction: column;
@@ -123,7 +126,8 @@ html {
     width: 50%;
 }
 
-.int-first-header-cont, .abt-first-header-cont, .abt2-first-header-cont {
+.int-first-header-cont, .abt-first-header-cont, 
+.abt2-first-header-cont, .serv-first-header-cont {
 
     h6 {
 
@@ -133,9 +137,10 @@ html {
 
 }
 
-.int-second-header-cont, .abt-second-header-cont, .abt2-second-header-cont {
+.int-second-header-cont, .abt-second-header-cont, 
+.abt2-second-header-cont, .serv-second-header-cont {
 
-    h1 {
+    h1, h2 {
 
         font-weight: bold;
     }
@@ -158,6 +163,11 @@ html {
     }
 }
 
+.about {
+
+    background-color: var(--color-about-bg);
+}
+
 .about-image-container {
 
     img {
@@ -169,7 +179,6 @@ html {
 
 .about2 {
 
-    min-height: 100vh;
     justify-content: center;
     background-image: linear-gradient(0deg, rgb(231, 222, 227, 0.86), rgba(175, 162, 169, 0.8)) ,url("../img/about-bg.jpg");
     background-size: cover;
@@ -201,6 +210,27 @@ html {
         margin-bottom: 0.5em;
         color: var(--bs-blue);
     }
+}
+
+.services {
+
+    justify-content: center;
+    background-image: linear-gradient(0deg, rgb(231, 222, 227, 0.86), rgba(175, 162, 169, 0.8)) ,url("../img/service-bg.jpg");
+    background-size: cover;
+
+}
+
+.services-first {
+
+    width: unset;
+    text-align: center;
+}
+
+.serv-info-cont {
+
+    display: flex;
+    gap: 1em;
+    
 }
 
 @media (max-width: 660px) {

@@ -3,6 +3,7 @@ html {
   --header-color-second: #e3f2fd;
   --color-main: #f8f9fa;
   --color-secondary: #6c757d;
+  --color-about-bg: #e9ecef;
   --color-secondary-dark: #e1e1ff;
   --color-secondary-after: #e1e1ff;
   --color-abt2-txt: #f0ffff;
@@ -63,33 +64,37 @@ html {
   color: black;
 }
 
-.intro, .about, .about2 {
+.intro, .about, .about2, .services {
   display: flex;
   align-items: center;
   background-color: var(--color-main);
   min-height: 100vh;
 }
 
-.intro-container, .about-container, .about2-container {
+.intro-container, .about-container, .about2-container,
+.services-container {
   display: flex;
   justify-content: space-between;
   padding: var(--padding-sides);
   padding-left: 7em;
 }
 
-.intro-first, .about-first, .about2-first {
+.intro-first, .about-first, .about2-first, .services-first {
   display: flex;
   flex-direction: column;
   gap: 2em;
   width: 50%;
 }
 
-.int-first-header-cont h6, .abt-first-header-cont h6, .abt2-first-header-cont h6 {
+.int-first-header-cont h6, .abt-first-header-cont h6,
+.abt2-first-header-cont h6, .serv-first-header-cont h6 {
   text-transform: uppercase;
   font-weight: bold;
 }
 
-.int-second-header-cont h1, .abt-second-header-cont h1, .abt2-second-header-cont h1 {
+.int-second-header-cont h1, .int-second-header-cont h2, .abt-second-header-cont h1, .abt-second-header-cont h2,
+.abt2-second-header-cont h1,
+.abt2-second-header-cont h2, .serv-second-header-cont h1, .serv-second-header-cont h2 {
   font-weight: bold;
 }
 
@@ -101,12 +106,15 @@ html {
   width: 350px;
 }
 
+.about {
+  background-color: var(--color-about-bg);
+}
+
 .about-image-container img {
   width: 500px;
 }
 
 .about2 {
-  min-height: 100vh;
   justify-content: center;
   background-image: linear-gradient(0deg, rgba(231, 222, 227, 0.86), rgba(175, 162, 169, 0.8)), url("../img/about-bg.jpg");
   background-size: cover;
@@ -132,6 +140,22 @@ html {
   font-size: 30px;
   margin-bottom: 0.5em;
   color: var(--bs-blue);
+}
+
+.services {
+  justify-content: center;
+  background-image: linear-gradient(0deg, rgba(231, 222, 227, 0.86), rgba(175, 162, 169, 0.8)), url("../img/service-bg.jpg");
+  background-size: cover;
+}
+
+.services-first {
+  width: unset;
+  text-align: center;
+}
+
+.serv-info-cont {
+  display: flex;
+  gap: 1em;
 }
 
 @media (max-width: 660px) {
