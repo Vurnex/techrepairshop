@@ -190,7 +190,8 @@ html {
     text-align: center;
 }
 
-.abt2-first-header-cont, .abt2-second-header-cont, .abt2-para-cont {
+.abt2-first-header-cont, .abt2-second-header-cont, .abt2-para-cont,
+.serv-first-header-cont, .serv-second-header-cont {
 
     color: var(--color-abt2-txt);
 
@@ -229,8 +230,25 @@ html {
 .serv-info-cont {
 
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 1em;
-    
+
+    .card {
+
+        width: 18rem;
+    }
+
+    .card > .card-body > i {
+
+        border: 1px solid;
+        padding: 0.5em;
+        border-radius: 50px;
+        font-size: 35px;
+        margin-bottom: 0.5em;
+        color: var(--bs-blue);
+    }
+
 }
 
 @media (max-width: 660px) {
