@@ -12,6 +12,8 @@ html {
 
     --color-abt2-txt: #f0ffff;
 
+    --color-pricing-list: #F5F4F5;
+
     --padding-sides: 1em 5em 1em 5em;
 
     scroll-behavior: smooth;
@@ -101,7 +103,7 @@ html {
 
 }
 
-.intro, .about, .about2, .services {
+.intro, .about, .about2, .services, .pricing {
 
     display: flex;
     align-items: center;
@@ -110,7 +112,7 @@ html {
 }
 
 .intro-container, .about-container, .about2-container, 
-.services-container {
+.services-container, .pricing-container {
 
     display: flex;
     justify-content: space-between;
@@ -118,7 +120,8 @@ html {
     padding-left: 7em;
 }
 
-.intro-first, .about-first, .about2-first, .services-first {
+.intro-first, .about-first, .about2-first, .services-first,
+.pricing-first {
 
     display: flex;
     flex-direction: column;
@@ -127,7 +130,8 @@ html {
 }
 
 .int-first-header-cont, .abt-first-header-cont, 
-.abt2-first-header-cont, .serv-first-header-cont {
+.abt2-first-header-cont, .serv-first-header-cont,
+.pric-first-header-cont {
 
     h6 {
 
@@ -146,7 +150,7 @@ html {
     }
 }
 
-.int-para-cont, .abt-para-cont {
+.int-para-cont, .abt-para-cont, .pric-para-cont {
 
     p {
 
@@ -249,6 +253,61 @@ html {
         color: var(--bs-blue);
     }
 
+}
+
+.pricing {
+
+    justify-content: center;
+
+}
+
+.pricing-container {
+
+    flex-direction: column;
+    gap: 2em;
+}
+
+.prices-container {
+
+    display: flex;
+    justify-content: center;
+}
+
+.pricing-first {
+
+    width: unset;
+    text-align: center;
+}
+
+.list-inner-content {
+
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.pricing-list {
+
+    background-color: var(--color-about-bg);
+    padding: 2em;
+    width: 80%;
+}
+
+.price-list-1-cont {
+
+    ul {
+
+        list-style: none;
+    }
+}
+
+.price-list-separator {
+
+    border-bottom-style: dashed;
+    border-bottom-width: 1px;
+    border-bottom-color: gray;
+    flex-grow: 1;
 }
 
 @media (max-width: 660px) {

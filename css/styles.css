@@ -7,6 +7,7 @@ html {
   --color-secondary-dark: #e1e1ff;
   --color-secondary-after: #e1e1ff;
   --color-abt2-txt: #f0ffff;
+  --color-pricing-list: #F5F4F5;
   --padding-sides: 1em 5em 1em 5em;
   scroll-behavior: smooth;
 }
@@ -64,7 +65,7 @@ html {
   color: black;
 }
 
-.intro, .about, .about2, .services {
+.intro, .about, .about2, .services, .pricing {
   display: flex;
   align-items: center;
   background-color: var(--color-main);
@@ -72,14 +73,15 @@ html {
 }
 
 .intro-container, .about-container, .about2-container,
-.services-container {
+.services-container, .pricing-container {
   display: flex;
   justify-content: space-between;
   padding: var(--padding-sides);
   padding-left: 7em;
 }
 
-.intro-first, .about-first, .about2-first, .services-first {
+.intro-first, .about-first, .about2-first, .services-first,
+.pricing-first {
   display: flex;
   flex-direction: column;
   gap: 2em;
@@ -87,7 +89,8 @@ html {
 }
 
 .int-first-header-cont h6, .abt-first-header-cont h6,
-.abt2-first-header-cont h6, .serv-first-header-cont h6 {
+.abt2-first-header-cont h6, .serv-first-header-cont h6,
+.pric-first-header-cont h6 {
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -98,7 +101,7 @@ html {
   font-weight: bold;
 }
 
-.int-para-cont p, .abt-para-cont p {
+.int-para-cont p, .abt-para-cont p, .pric-para-cont p {
   color: var(--color-secondary);
 }
 
@@ -170,6 +173,49 @@ html {
   font-size: 35px;
   margin-bottom: 0.5em;
   color: var(--bs-blue);
+}
+
+.pricing {
+  justify-content: center;
+}
+
+.pricing-container {
+  flex-direction: column;
+  gap: 2em;
+}
+
+.prices-container {
+  display: flex;
+  justify-content: center;
+}
+
+.pricing-first {
+  width: unset;
+  text-align: center;
+}
+
+.list-inner-content {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.pricing-list {
+  background-color: var(--color-about-bg);
+  padding: 2em;
+  width: 80%;
+}
+
+.price-list-1-cont ul {
+  list-style: none;
+}
+
+.price-list-separator {
+  border-bottom-style: dashed;
+  border-bottom-width: 1px;
+  border-bottom-color: gray;
+  flex-grow: 1;
 }
 
 @media (max-width: 660px) {
