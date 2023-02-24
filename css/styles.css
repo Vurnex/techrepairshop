@@ -70,7 +70,7 @@ html {
 }
 
 .intro, .about, .about2, .services, .pricing,
-.call-to-action {
+.call-to-action, .contact {
   display: flex;
   align-items: center;
   background-color: var(--color-main);
@@ -78,7 +78,8 @@ html {
 }
 
 .intro-container, .about-container, .about2-container,
-.services-container, .pricing-container, .action-container {
+.services-container, .pricing-container, .action-container,
+.contact-container {
   display: flex;
   justify-content: space-between;
   padding: var(--padding-sides);
@@ -256,6 +257,10 @@ html {
 .action-header-cont h2 {
   color: var(--color-main);
   font-weight: bold;
+}
+
+.ctt-border {
+  border-top: 1px solid #dcdcde;
 }
 
 @media (max-width: 660px) {
