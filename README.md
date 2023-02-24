@@ -6,7 +6,7 @@ A website to create a concept design for a tech repair shop.
 
 ## What I learned while working on this project
 
-- 
+- Better SCSS Nesting
 - 
 
 ## Frameworks and Tools Used

@@ -6,6 +6,7 @@ html {
     --color-secondary: #6c757d;
 
     --color-about-bg: #e9ecef;
+    --color-pricing-bg: #ced4da;
 
     --color-secondary-dark: #e1e1ff;
     --color-secondary-after: #e1e1ff;
@@ -13,6 +14,7 @@ html {
     --color-abt2-txt: #f0ffff;
 
     --color-pricing-list: #F5F4F5;
+    --color-prices: #0d6efd;
 
     --padding-sides: 1em 5em 1em 5em;
 
@@ -133,7 +135,7 @@ html {
 .abt2-first-header-cont, .serv-first-header-cont,
 .pric-first-header-cont {
 
-    h6 {
+    h6, h2 {
 
         text-transform: uppercase;
         font-weight: bold;
@@ -258,6 +260,7 @@ html {
 .pricing {
 
     justify-content: center;
+    background-color: var(--color-pricing-bg);
 
 }
 
@@ -285,6 +288,17 @@ html {
     align-items: center;
     gap: 1em;
     margin-bottom: 1em;
+
+    span {
+
+        font-weight: bold;
+
+        &:nth-child(3) {
+
+            color: var(--color-prices);
+        }
+    }
+
 }
 
 .pricing-list {
@@ -299,6 +313,10 @@ html {
     ul {
 
         list-style: none;
+
+        p {
+            color: var(--color-secondary);
+        }
     }
 }
 
