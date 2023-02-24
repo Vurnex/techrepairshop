@@ -67,7 +67,8 @@ html {
   color: black;
 }
 
-.intro, .about, .about2, .services, .pricing {
+.intro, .about, .about2, .services, .pricing,
+.call-to-action {
   display: flex;
   align-items: center;
   background-color: var(--color-main);
@@ -75,7 +76,7 @@ html {
 }
 
 .intro-container, .about-container, .about2-container,
-.services-container, .pricing-container {
+.services-container, .pricing-container, .action-container {
   display: flex;
   justify-content: space-between;
   padding: var(--padding-sides);
@@ -230,6 +231,17 @@ html {
   border-bottom-width: 1px;
   border-bottom-color: gray;
   flex-grow: 1;
+}
+
+.call-to-action {
+  justify-content: center;
+}
+
+.action-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
 }
 
 @media (max-width: 660px) {
