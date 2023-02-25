@@ -98,18 +98,22 @@ html {
 .abt2-first-header-cont h6,
 .abt2-first-header-cont h2, .serv-first-header-cont h6, .serv-first-header-cont h2,
 .pric-first-header-cont h6,
-.pric-first-header-cont h2 {
+.pric-first-header-cont h2, .ctt-left-header-1 h6, .ctt-left-header-1 h2 {
   text-transform: uppercase;
   font-weight: bold;
+  color: var(--color-prices);
 }
 
 .int-second-header-cont h1, .int-second-header-cont h2, .abt-second-header-cont h1, .abt-second-header-cont h2,
 .abt2-second-header-cont h1,
-.abt2-second-header-cont h2, .serv-second-header-cont h1, .serv-second-header-cont h2 {
+.abt2-second-header-cont h2, .serv-second-header-cont h1, .serv-second-header-cont h2,
+.ctt-left-header-2 h1,
+.ctt-left-header-2 h2 {
   font-weight: bold;
 }
 
-.int-para-cont p, .abt-para-cont p, .pric-para-cont p {
+.int-para-cont p, .abt-para-cont p, .pric-para-cont p,
+.ctt-left-para p {
   color: var(--color-secondary);
 }
 
@@ -138,6 +142,10 @@ html {
 
 .abt2-first-header-cont, .abt2-second-header-cont, .abt2-para-cont,
 .serv-first-header-cont, .serv-second-header-cont {
+  color: var(--color-abt2-txt);
+}
+.abt2-first-header-cont h6, .abt2-second-header-cont h6, .abt2-para-cont h6,
+.serv-first-header-cont h6, .serv-second-header-cont h6 {
   color: var(--color-abt2-txt);
 }
 
@@ -239,6 +247,7 @@ html {
 .call-to-action {
   justify-content: center;
   min-height: 50vh;
+  background-color: var(--color-about-bg);
 }
 
 .action-container {
@@ -287,7 +296,7 @@ html {
 }
 
 .contact-left {
-  width: 45%;
+  width: 40%;
 }
 
 .contact-right {
@@ -296,13 +305,43 @@ html {
   width: 55%;
 }
 
+.ctt-border-cont {
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
 .ctt-border {
   border-top: 1px solid #dcdcde;
+  display: flex;
+  width: 100%;
 }
 
 .ctt-right-header h2 {
   padding: 0.2em;
   font-weight: bold;
+}
+
+.ctt-location-cont {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.ctt-info span {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.ctt-info p {
+  color: var(--color-secondary);
+}
+
+.ctt-icon-container span > i {
+  border: 1px solid;
+  padding: 0.5em;
+  border-radius: 50px;
+  font-size: 35px;
+  margin-bottom: 0.5em;
+  color: var(--bs-blue);
 }
 
 @media (max-width: 660px) {
