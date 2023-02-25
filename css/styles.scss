@@ -19,6 +19,8 @@ html {
     --color-cta-first: #f0544f;
     --color-cta-second: #1e72bd;
 
+    --color-footer-bg: #222222;
+
     --padding-sides: 1em 5em 1em 5em;
 
     scroll-behavior: smooth;
@@ -476,6 +478,20 @@ html {
         margin-bottom: 0.5em;
         color: var(--bs-blue);
     }
+}
+
+footer {
+
+    background-color: var(--color-footer-bg);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 15vh;
+    width: 100%;
+    padding-top: 1em;
+    z-index: 1;
+    text-align: center;
 }
 
 @media (max-width: 660px) {
