@@ -49,6 +49,7 @@ html {
     ul {
 
         display: flex;
+        justify-content: center;
         gap: 2em;
         list-style: none;
         flex-wrap: wrap;
@@ -60,6 +61,7 @@ html {
 .nav {
 
     justify-content: space-between;
+    align-items: center;
     background-color: var(--header-color-second);
     padding: var(--padding-sides) !important;
     font-weight: bold;
@@ -494,8 +496,28 @@ footer {
     text-align: center;
 }
 
-@media (max-width: 660px) {
 
+/* Custom classes */
+
+.margins {
+
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+@media (max-width: 900px) {
+
+    .header-container {
+
+        justify-content: center;
+    }
+    
+    .h-location {
+
+        display: none;
+    }
+
+    
     .nav {
 
         display: none !important;
@@ -506,10 +528,80 @@ footer {
         display: flex;
         background-color: #e3f2fd;
         color: black;
+        padding-top: 1em;
+        padding-bottom: 1em;
 
         .header-btn {
 
             display: block;
         }
+    }
+
+    .intro-image-container > img {
+
+        width: unset;
+    }
+
+    .intro-container, .about-container, .about2-container, 
+    .services-container, .pricing-container, .action-container, 
+    .contact-container {
+
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .intro-first, .about-first, .about2-first, 
+    .services-first, .pricing-first {
+
+        width: unset;
+    }
+
+    .intro-first, .about-first {
+
+        text-align: center;
+    }
+
+    .intro-image-container {
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .about {
+
+        background-image: linear-gradient(0deg, rgb(231, 222, 227, 0.86), rgba(175, 162, 169, 0.8)) ,url("../img/about-repair.jpg");
+        background-size: cover;
+
+    }
+
+    .abt-first-header-cont, .abt-second-header-cont,
+    .abt-para-cont {
+
+        h1, h6, p {
+
+            color: var(--color-abt2-txt);
+        }
+
+
+    }
+
+    .about-image-container {
+
+        display: none;
+    }
+
+    .contact-left, .contact-right {
+
+        width: unset;
+    }
+
+    .field-input {
+
+        width: 100%;
+    }
+
+    .action-container {
+
+        border-radius: unset;
     }
 }
