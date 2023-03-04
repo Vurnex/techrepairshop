@@ -17,6 +17,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  min-width: 450px;
+}
+
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -391,7 +395,7 @@ footer {
   }
   .intro-container, .about-container, .about2-container,
   .services-container, .pricing-container, .action-container,
-  .contact-container {
+  .contact-container, .about2-info-cont {
     flex-direction: column;
     gap: 2em;
   }
@@ -419,6 +423,9 @@ footer {
   .about-image-container {
     display: none;
   }
+  .serv-info-cont > .card {
+    width: unset;
+  }
   .contact-left, .contact-right {
     width: unset;
   }
@@ -427,5 +434,10 @@ footer {
   }
   .action-container {
     border-radius: unset;
+  }
+}
+@media (max-width: 900px) and (max-width: 500px) {
+  .intro-image-container {
+    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */

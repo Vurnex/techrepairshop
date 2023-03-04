@@ -27,6 +27,11 @@ html {
 
 }
 
+body {
+
+    min-width: 450px;
+}
+
 .header-container {
 
     display: flex;
@@ -544,7 +549,7 @@ footer {
 
     .intro-container, .about-container, .about2-container, 
     .services-container, .pricing-container, .action-container, 
-    .contact-container {
+    .contact-container, .about2-info-cont {
 
         flex-direction: column;
         gap: 2em;
@@ -590,6 +595,11 @@ footer {
         display: none;
     }
 
+    .serv-info-cont > .card {
+
+        width: unset;
+    }
+
     .contact-left, .contact-right {
 
         width: unset;
@@ -604,4 +614,14 @@ footer {
 
         border-radius: unset;
     }
+
+    @media (max-width: 500px) {
+
+        .intro-image-container {
+
+            display: none;
+        }
+
+    }
+        
 }
