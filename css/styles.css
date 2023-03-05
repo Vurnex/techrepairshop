@@ -87,6 +87,7 @@ body {
 .contact-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: var(--padding-sides);
   padding-left: 7em;
 }
@@ -127,8 +128,11 @@ body {
   gap: 2em;
 }
 
+.intro-image-container {
+  width: 40%;
+}
 .intro-image-container img {
-  width: 350px;
+  height: 400px;
 }
 
 .about {
@@ -459,14 +463,21 @@ footer {
   html {
     --padding-sides: unset;
   }
+  .header-container {
+    padding-top: 1em;
+  }
   .header-btn {
     display: none;
+  }
+  .intro {
+    padding-top: 3em;
   }
   .int-btn-cont {
     flex-direction: column;
   }
   .intro-image-container {
-    display: none;
+    padding-top: 1em;
+    padding-bottom: 1em;
   }
   .intro-container, .about-container, .about2-container,
   .services-container, .pricing-container, .action-container,

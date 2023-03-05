@@ -8,6 +8,7 @@ A website to create a concept design for a tech repair shop.
 
 - Better SCSS Nesting
 - Better use of containers for elements
+- Adding a carousel using bootstrap
 
 ## Frameworks and Tools Used
 
