@@ -645,6 +645,11 @@ footer {
 
     @media (max-width: 500px) {
 
+        html {
+
+            --padding-sides: unset;
+        }
+
         .header-btn {
 
             display: none;
@@ -659,6 +664,14 @@ footer {
         .intro-image-container {
 
             display: none;
+        }
+
+        .intro-container, .about-container, .about2-container, 
+        .services-container, .pricing-container, .action-container, 
+        .contact-container {
+
+            padding-left: unset;
+            padding: 0em 2em 0em 2em;
         }
 
     }
