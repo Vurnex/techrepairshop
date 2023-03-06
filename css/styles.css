@@ -50,10 +50,13 @@ body {
 .nav ul {
   display: flex;
   list-style: none;
-  gap: 2em;
+  gap: 1em;
+  margin: 0;
 }
 .nav ul > li > a {
   text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.1rem;
 }
 
 .site-name {
@@ -71,7 +74,9 @@ body {
 }
 #nav-mobile ul > li > a {
   text-decoration: none;
-  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--color-prices);
 }
 
 .intro, .about, .about2, .services, .pricing,
@@ -97,7 +102,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2em;
-  width: 50%;
+  width: 40%;
 }
 
 .int-first-header-cont h6, .int-first-header-cont h2, .abt-first-header-cont h6, .abt-first-header-cont h2,
