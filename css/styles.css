@@ -291,6 +291,10 @@ body {
   justify-content: center;
 }
 
+.contact-container {
+  align-items: flex-start;
+}
+
 .contact-form-container form {
   display: flex;
   flex-wrap: wrap;
@@ -361,6 +365,10 @@ body {
   font-size: 35px;
   margin-bottom: 0.5em;
   color: var(--bs-blue);
+}
+
+#form-alert-success, #form-alert-fail {
+  display: none;
 }
 
 footer {

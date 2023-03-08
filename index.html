@@ -640,14 +640,21 @@
 
             </div>
 
+            <div class="alert alert-success" role="alert" id="form-alert-success">
+              Message sent successfully.
+            </div>
+            <div class="alert alert-danger" role="alert" id="form-alert-fail">
+              Something went wrong. Please try again later.
+            </div>
+
             <div class="contact-form-container">
 
-              <form action="" method="post" name="contact-form">
+              <form action="" method="post" name="contact-tech" data-netlify="true">
 
                 <div class="field-input">
 
-                  <label for="form-field-name" class="form-label">Name</label>
-                  <input type="text" class="form-control" id="form-field-name" placeholder="Name">
+                  <label for="form-field-name" class="form-label">Name *</label>
+                  <input type="text" class="form-control" id="form-field-name" placeholder="Name" required>
 
                 </div>
 
@@ -660,29 +667,29 @@
 
                 <div class="field-input">
 
-                  <label for="form-field-email" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="form-field-email" placeholder="Email">
+                  <label for="form-field-email" class="form-label">Email *</label>
+                  <input type="email" class="form-control" id="form-field-email" placeholder="Email" name="email" required>
 
                 </div>
 
                 <div class="field-input">
 
                   <label for="form-field-phone" class="form-label">Phone</label>
-                  <input type="tel" class="form-control" id="form-field-phone" placeholder="Phone">
+                  <input type="tel" class="form-control" id="form-field-phone" placeholder="Phone" required>
 
                 </div>
 
                 <div class="field-input-2">
 
-                  <label for="form-field-subject" class="form-label">Subject</label>
-                  <input type="text" class="form-control" id="form-field-subject" placeholder="Subject">
+                  <label for="form-field-subject" class="form-label">Subject *</label>
+                  <input type="text" class="form-control" id="form-field-subject" placeholder="Subject" name="subject" required>
 
                 </div>
 
                 <div class="field-input-2">
 
-                  <label for="form-field-message" class="form-label">Message</label>
-                  <textarea class="form-control" id="form-field-message" placeholder="Message" rows="4"></textarea>
+                  <label for="form-field-message" class="form-label">Message *</label>
+                  <textarea class="form-control" id="form-field-message" placeholder="Message" rows="4" required></textarea>
 
                 </div>
 
