@@ -2,9 +2,9 @@
 
 A website to create a concept design for a tech repair shop.
 
-[Live Preview]()
+[Live Preview](https://vurnex.github.io/techrepairshop/)
 
-## What I learned while working on this project
+## What I Learned While Working on this Project
 
 - Better SCSS Nesting
 - Better use of containers for elements
@@ -14,3 +14,4 @@ A website to create a concept design for a tech repair shop.
 
 - Bootstrap
 - SASS
+- Netlify (Hosting)
