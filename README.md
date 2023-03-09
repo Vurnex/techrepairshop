@@ -9,6 +9,7 @@ A website to create a concept design for a tech repair shop.
 - Better SCSS Nesting
 - Better use of containers for elements
 - Adding a carousel using bootstrap
+- Use of Fetch API to submit form data
 
 ## Frameworks and Tools Used
 
