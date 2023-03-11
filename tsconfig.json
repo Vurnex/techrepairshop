@@ -7,4 +7,4 @@
       "strictNullChecks": true
     },
     "include": ["**/*.ts"]
-  }
+}
