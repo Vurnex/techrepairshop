@@ -4,45 +4,38 @@ const handleSubmit = (event) => {
     const myForm = event.target;
     const formData = new FormData(myForm);
 
-    Promise.all([
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: new URLSearchParams(formData).toString(),
-          }),
-        fetch("/.netlify/functions/DBConfig")
-        .then(function() { 
+    const plainFormData = Object.fromEntries(formData.entries());
+	const formDataJsonString = JSON.stringify(plainFormData);
 
-            formAlertFail.style.display = "none";
-            formAlertSuccess.style.display = "block"; })
-    
-          .catch(function(error) { 
-            
-            console.log(error); 
-            
-            formAlertSuccess.style.display = "none";
-            formAlertFail.style.display = "block"; })
-    ]);
-
-    /*
+    console.log(formDataJsonString);
     
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
-      .then(function() { 
-
+    .then(function(data) { 
+        
         formAlertFail.style.display = "none";
         formAlertSuccess.style.display = "block"; })
 
-      .catch(function(error) { 
+    .catch(function(error) { 
         
         console.log(error); 
         
         formAlertSuccess.style.display = "none";
-        formAlertFail.style.display = "block"; }); 
-        */
+        formAlertFail.style.display = "block"; 
+    });
+
+    fetch("/.netlify/functions/DBConfig", {
+        method: "POST",
+        headers: { 	
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+          },
+        body: formDataJsonString,
+    })
+    .then((data) => console.log(data));
   };
   
   document.querySelector("form").addEventListener("submit", handleSubmit);

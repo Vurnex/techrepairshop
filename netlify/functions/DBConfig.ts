@@ -15,7 +15,9 @@ export const handler: Handler = withPlanetscale(async (event, context) => {
     };
   }
 
-  const { name } = JSON.parse(body);
+  const { name, email, subject, message } = JSON.parse(body);
+
+  //console.log("In function", name, email, subject, message);
 
   await connection.execute("INSERT INTO names (name) VALUES (?)", [
     name,
