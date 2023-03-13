@@ -74,6 +74,7 @@ body {
     ul {
 
         display: flex;
+        align-items: center;
         list-style: none;
         gap: 1em;
         margin: 0;
@@ -89,10 +90,16 @@ body {
 
 }
 
-.site-name{
+.site-name {
 
     text-transform: uppercase;
     font-weight: bold;
+}
+
+.logo {
+
+    width: 40px;
+    height: auto;
 }
 
 #nav-mobile {
@@ -102,8 +109,10 @@ body {
     ul {
 
         display: flex;
+        align-items: center;
         list-style: none;
         gap: 1em;
+        margin: 0;
 
     }
 
@@ -559,11 +568,6 @@ footer {
     .nav {
 
         display: none !important;
-    }
-
-    .site-name {
-
-        margin: 1em 0 0 2em;
     }
 
     #nav-mobile {

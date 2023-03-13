@@ -49,6 +49,7 @@ body {
 }
 .nav ul {
   display: flex;
+  align-items: center;
   list-style: none;
   gap: 1em;
   margin: 0;
@@ -64,13 +65,20 @@ body {
   font-weight: bold;
 }
 
+.logo {
+  width: 40px;
+  height: auto;
+}
+
 #nav-mobile {
   display: none;
 }
 #nav-mobile ul {
   display: flex;
+  align-items: center;
   list-style: none;
   gap: 1em;
+  margin: 0;
 }
 #nav-mobile ul > li > a {
   text-decoration: none;
@@ -408,9 +416,6 @@ footer {
   }
   .nav {
     display: none !important;
-  }
-  .site-name {
-    margin: 1em 0 0 2em;
   }
   #nav-mobile {
     display: flex;
