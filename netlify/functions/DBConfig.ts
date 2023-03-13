@@ -17,10 +17,11 @@ export const handler: Handler = withPlanetscale(async (event, context) => {
 
   const { name, email, subject, message } = JSON.parse(body);
 
-  //console.log("In function", name, email, subject, message);
-
-  await connection.execute("INSERT INTO names (name) VALUES (?)", [
+  await connection.execute("INSERT INTO names (name, email, subject, message) VALUES (?, ?, ?, ?)", [
     name,
+    email,
+    subject,
+    message
   ]);
 
   return {

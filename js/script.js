@@ -4,10 +4,10 @@ const handleSubmit = (event) => {
     const myForm = event.target;
     const formData = new FormData(myForm);
 
+
+    //Convert Form Data to JSON for Fetch
     const plainFormData = Object.fromEntries(formData.entries());
 	const formDataJsonString = JSON.stringify(plainFormData);
-
-    console.log(formDataJsonString);
     
     fetch("/", {
       method: "POST",
@@ -19,9 +19,7 @@ const handleSubmit = (event) => {
         formAlertFail.style.display = "none";
         formAlertSuccess.style.display = "block"; })
 
-    .catch(function(error) { 
-        
-        console.log(error); 
+    .catch(function(error) {  
         
         formAlertSuccess.style.display = "none";
         formAlertFail.style.display = "block"; 
@@ -35,7 +33,6 @@ const handleSubmit = (event) => {
           },
         body: formDataJsonString,
     })
-    .then((data) => console.log(data));
   };
   
   document.querySelector("form").addEventListener("submit", handleSubmit);
