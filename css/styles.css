@@ -63,6 +63,7 @@ body {
 .site-name {
   text-transform: uppercase;
   font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .logo {
@@ -407,7 +408,7 @@ footer {
 }
 
 /* Media Queries */
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .header-container {
     justify-content: center;
   }
@@ -477,7 +478,7 @@ footer {
     border-radius: unset;
   }
 }
-@media (max-width: 900px) and (max-width: 500px) {
+@media (max-width: 950px) and (max-width: 500px) {
   html {
     --padding-sides: unset;
   }
