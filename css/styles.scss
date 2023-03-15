@@ -227,6 +227,11 @@ body {
     background-size: cover;
 }
 
+.about2-first {
+
+    width: unset;
+}
+
 .about2-container {
 
     justify-content: center;
@@ -251,6 +256,13 @@ body {
 
     display: flex;
     gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .card {
+
+        width: 18rem;
+    }
 
     .card > .card-body > i {
 
@@ -641,9 +653,12 @@ footer {
         display: none;
     }
 
-    .serv-info-cont > .card {
+    .about2-info-cont, .serv-info-cont {
 
-        width: unset;
+        .card {
+
+            width: unset;
+        }
     }
 
     .contact-left, .contact-right {

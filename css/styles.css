@@ -163,6 +163,10 @@ body {
   background-size: cover;
 }
 
+.about2-first {
+  width: unset;
+}
+
 .about2-container {
   justify-content: center;
   text-align: center;
@@ -180,6 +184,11 @@ body {
 .about2-info-cont {
   display: flex;
   gap: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.about2-info-cont .card {
+  width: 18rem;
 }
 .about2-info-cont .card > .card-body > i {
   border: 1px solid;
@@ -462,7 +471,7 @@ footer {
   .about-image-container {
     display: none;
   }
-  .serv-info-cont > .card {
+  .about2-info-cont .card, .serv-info-cont .card {
     width: unset;
   }
   .contact-left, .contact-right {
