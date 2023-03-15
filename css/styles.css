@@ -7,6 +7,8 @@ html {
   --color-pricing-bg: #ced4da;
   --color-secondary-dark: #e1e1ff;
   --color-secondary-after: #e1e1ff;
+  --color-intro-header-txt: #f0ffff;
+  --color-intro-para: #b1c2d0;
   --color-abt2-txt: #f0ffff;
   --color-pricing-list: #F5F4F5;
   --color-prices: #0d6efd;
@@ -132,9 +134,26 @@ body {
   font-weight: bold;
 }
 
-.int-para-cont p, .abt-para-cont p, .pric-para-cont p,
+.abt-para-cont p, .pric-para-cont p,
 .ctt-left-para p {
   color: var(--color-secondary);
+}
+
+.intro {
+  background-image: linear-gradient(263deg, rgba(125, 159, 255, 0.27), rgba(0, 0, 0, 0.88)), url("../img/intro-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.intro-first {
+  width: 50%;
+}
+
+.int-second-header-cont h1, .int-para-cont h1 {
+  color: var(--color-intro-header-txt);
+}
+.int-second-header-cont p, .int-para-cont p {
+  color: var(--color-intro-para);
 }
 
 .int-btn-cont {
