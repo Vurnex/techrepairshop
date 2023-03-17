@@ -18,3 +18,5 @@ A website to create a concept design for a tech repair shop.
 - SASS
 - Netlify (Hosting)
 - PlanetScale (Serverless MySQL Database)
+
+Credit to [Pexels.com](https://www.pexels.com/search/information%20technology/) for the images.
