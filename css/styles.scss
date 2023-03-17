@@ -195,7 +195,7 @@ body {
 
 .intro {
 
-    background-image: linear-gradient(263deg, rgba(125, 159, 255, 0.27), rgba(0, 0, 0, 0.88)) ,url("../img/intro-bg.jpg");
+    background-image: linear-gradient(264deg, rgba(0, 0, 0, 0.29), rgba(0, 0, 0)) ,url("../img/intro-bg.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -222,16 +222,6 @@ body {
 
     display: flex;
     gap: 2em;
-}
-
-.intro-image-container {
-
-    width: 40%;
-
-    img {
-
-        height: 400px;
-    }
 }
 
 .about {
@@ -266,9 +256,11 @@ body {
 
 .about-image-container {
 
+    width: 50%;
+
     img {
 
-        width: 500px;
+        width: 600px;
     }
 }
 
@@ -276,7 +268,7 @@ body {
 .about2 {
 
     justify-content: center;
-    background-image: linear-gradient(0deg, rgb(231, 222, 227, 0.86), rgba(175, 162, 169, 0.8)) ,url("../img/about-bg.jpg");
+    background-image: linear-gradient(0deg, rgb(231, 222, 227, 0.86), rgba(29, 27, 28, 0.88)) ,url("../img/about2-bg.jpg");
     background-size: cover;
 }
 
@@ -653,11 +645,6 @@ footer {
 
     }
 
-    .intro-image-container > img {
-
-        width: unset;
-    }
-
     .intro-container, .about-container, .about2-container, 
     .services-container, .pricing-container, .action-container, 
     .contact-container, .about2-info-cont {
@@ -677,28 +664,9 @@ footer {
         text-align: center;
     }
 
-    .intro-image-container {
-
-        display: flex;
-        justify-content: center;
-    }
-
     .about {
 
-        background-image: linear-gradient(0deg, rgb(231, 222, 227, 0.86), rgba(175, 162, 169, 0.8)) ,url("../img/about-repair.jpg");
-        background-size: cover;
-
-    }
-
-    .abt-first-header-cont, .abt-second-header-cont,
-    .abt-para-cont, .about-list-cont {
-
-        h1, h2, h6, p {
-
-            color: var(--color-abt2-txt);
-        }
-
-
+        min-height: 130vh;
     }
 
     .about-list-cont {
@@ -712,13 +680,17 @@ footer {
         li {
 
             width: unset;
-            color: var(--color-abt2-txt);
         }
     }
 
     .about-image-container {
 
-        display: none;
+        width: 90%;
+
+        img {
+
+            width: 100%;
+        }
     }
 
     .about2-info-cont, .serv-info-cont {

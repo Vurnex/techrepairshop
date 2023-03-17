@@ -140,7 +140,7 @@ body {
 }
 
 .intro {
-  background-image: linear-gradient(263deg, rgba(125, 159, 255, 0.27), rgba(0, 0, 0, 0.88)), url("../img/intro-bg.jpg");
+  background-image: linear-gradient(264deg, rgba(0, 0, 0, 0.29), rgb(0, 0, 0)), url("../img/intro-bg.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -159,13 +159,6 @@ body {
 .int-btn-cont {
   display: flex;
   gap: 2em;
-}
-
-.intro-image-container {
-  width: 40%;
-}
-.intro-image-container img {
-  height: 400px;
 }
 
 .about {
@@ -189,13 +182,16 @@ body {
   font-size: 20px;
 }
 
+.about-image-container {
+  width: 50%;
+}
 .about-image-container img {
-  width: 500px;
+  width: 600px;
 }
 
 .about2 {
   justify-content: center;
-  background-image: linear-gradient(0deg, rgba(231, 222, 227, 0.86), rgba(175, 162, 169, 0.8)), url("../img/about-bg.jpg");
+  background-image: linear-gradient(0deg, rgba(231, 222, 227, 0.86), rgba(29, 27, 28, 0.88)), url("../img/about2-bg.jpg");
   background-size: cover;
 }
 
@@ -474,9 +470,6 @@ footer {
     justify-content: center;
     gap: 1em;
   }
-  .intro-image-container > img {
-    width: unset;
-  }
   .intro-container, .about-container, .about2-container,
   .services-container, .pricing-container, .action-container,
   .contact-container, .about2-info-cont {
@@ -490,20 +483,8 @@ footer {
   .intro-first, .about-first {
     text-align: center;
   }
-  .intro-image-container {
-    display: flex;
-    justify-content: center;
-  }
   .about {
-    background-image: linear-gradient(0deg, rgba(231, 222, 227, 0.86), rgba(175, 162, 169, 0.8)), url("../img/about-repair.jpg");
-    background-size: cover;
-  }
-  .abt-first-header-cont h1, .abt-first-header-cont h2, .abt-first-header-cont h6, .abt-first-header-cont p, .abt-second-header-cont h1, .abt-second-header-cont h2, .abt-second-header-cont h6, .abt-second-header-cont p,
-  .abt-para-cont h1,
-  .abt-para-cont h2,
-  .abt-para-cont h6,
-  .abt-para-cont p, .about-list-cont h1, .about-list-cont h2, .about-list-cont h6, .about-list-cont p {
-    color: var(--color-abt2-txt);
+    min-height: 130vh;
   }
   .about-list-cont ul {
     justify-content: center;
@@ -511,10 +492,12 @@ footer {
   }
   .about-list-cont li {
     width: unset;
-    color: var(--color-abt2-txt);
   }
   .about-image-container {
-    display: none;
+    width: 90%;
+  }
+  .about-image-container img {
+    width: 100%;
   }
   .about2-info-cont .card, .serv-info-cont .card {
     width: unset;
