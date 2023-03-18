@@ -17,6 +17,8 @@ export const handler: Handler = withPlanetscale(async (event, context) => {
 
   let { name, email, inquiry, subject, message, company, phone } = JSON.parse(body);
 
+  let dateTime = new Date();
+
   //These fields aren't required, if empty, indicate in database that no info was provided.
   if (!company){
     company = "No Details Provided";
@@ -28,14 +30,15 @@ export const handler: Handler = withPlanetscale(async (event, context) => {
 
   //console.log(name, email, inquiry, subject, message, company, phone);
 
-  await connection.execute("INSERT INTO contact_submissions (name, email, inquiry, subject, message, company, phone) VALUES (?, ?, ?, ?, ?, ?, ?)", [
+  await connection.execute("INSERT INTO contact_submissions (name, email, inquiry, subject, message, company, phone, datetime) VALUES (?, ?, ?, ?, ?, ?, ?, ?)", [
     name,
     email,
     inquiry,
     subject,
     message,
     company,
-    phone
+    phone,
+    dateTime
   ]);
 
   return {
