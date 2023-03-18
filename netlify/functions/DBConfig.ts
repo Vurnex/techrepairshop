@@ -15,13 +15,27 @@ export const handler: Handler = withPlanetscale(async (event, context) => {
     };
   }
 
-  const { name, email, subject, message } = JSON.parse(body);
+  let { name, email, inquiry, subject, message, company, phone } = JSON.parse(body);
 
-  await connection.execute("INSERT INTO names (name, email, subject, message) VALUES (?, ?, ?, ?)", [
+  //These fields aren't required, if empty, indicate in database that no info was provided.
+  if (!company){
+    company = "No Details Provided";
+  }
+
+  if (!phone){
+    phone = "No Details Provided";
+  }
+
+  //console.log(name, email, inquiry, subject, message, company, phone);
+
+  await connection.execute("INSERT INTO contact_submissions (name, email, inquiry, subject, message, company, phone) VALUES (?, ?, ?, ?, ?, ?, ?)", [
     name,
     email,
+    inquiry,
     subject,
-    message
+    message,
+    company,
+    phone
   ]);
 
   return {

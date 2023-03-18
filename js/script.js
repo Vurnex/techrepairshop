@@ -7,7 +7,7 @@ const handleSubmit = (event) => {
 
     //Convert Form Data to JSON for Fetch
     const plainFormData = Object.fromEntries(formData.entries());
-	const formDataJsonString = JSON.stringify(plainFormData);
+	  const formDataJsonString = JSON.stringify(plainFormData);
     
     fetch("/", {
       method: "POST",
@@ -16,22 +16,22 @@ const handleSubmit = (event) => {
     })
     .then(function(data) { 
         
-        formAlertFail.style.display = "none";
-        formAlertSuccess.style.display = "block"; })
+      formAlertFail.style.display = "none";
+      formAlertSuccess.style.display = "block"; })
 
     .catch(function(error) {  
         
-        formAlertSuccess.style.display = "none";
-        formAlertFail.style.display = "block"; 
+      formAlertSuccess.style.display = "none";
+      formAlertFail.style.display = "block"; 
     });
 
     fetch("/.netlify/functions/DBConfig", {
-        method: "POST",
-        headers: { 	
-            "Content-Type": "application/json",
-            "Accept": "application/json"
-          },
-        body: formDataJsonString,
+      method: "POST",
+      headers: { 	
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+      body: formDataJsonString,
     })
   };
   
