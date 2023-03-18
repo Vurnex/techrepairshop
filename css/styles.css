@@ -252,9 +252,7 @@ body {
   width: 18rem;
 }
 .serv-info-cont .card > .card-body > i {
-  border: 1px solid;
   padding: 0.5em;
-  border-radius: 50px;
   font-size: 35px;
   margin-bottom: 0.5em;
   color: var(--bs-blue);
@@ -398,6 +396,9 @@ body {
   display: flex;
   align-items: center;
   gap: 1em;
+}
+.ctt-location-cont:first-child > .ctt-icon-container > span > i {
+  font-size: 41px;
 }
 
 .ctt-info span {
