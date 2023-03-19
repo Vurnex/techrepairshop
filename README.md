@@ -1,16 +1,18 @@
-# Tech Repair Shop
+# EC2Fix (IT Management Business Website)
 
-A website to create a concept design for a tech repair shop.
+A website for an IT Management Business. This website was created with the purpose to provide an online presence and information for a small business. 
 
-[Live Preview](https://vurnex.github.io/techrepairshop/)
+[Live Preview](https://ec2fix.netlify.app)
 
-## What I Learned While Working on this Project
+## What I Learned While Working On This Project
 
 - Better SCSS Nesting
 - Better use of containers for elements
 - Adding a carousel using bootstrap
 - Use of Fetch API to submit form data
 - Sending JSON data using Fetch
+- Further usage of keyframe animations
+- Using IntersectionObserver API to wait for elements to come into view before applying animations.
 
 ## Frameworks and Tools Used
 
