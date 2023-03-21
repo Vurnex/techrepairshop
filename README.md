@@ -10,7 +10,7 @@ A website for an IT Management Business. This website was created with the purpo
 - Better use of containers for elements
 - Adding a carousel using bootstrap
 - Use of Fetch API to submit form data
-- Sending JSON data using Fetch
+- Sending and retrieving JSON data from a database using Fetch
 - Further usage of keyframe animations
 - Using IntersectionObserver API to wait for elements to come into view before applying animations.
 
