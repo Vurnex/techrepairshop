@@ -426,6 +426,7 @@ footer {
   background-color: var(--color-footer-bg);
   color: white;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 15vh;
@@ -433,6 +434,34 @@ footer {
   padding-top: 1em;
   z-index: 1;
   text-align: center;
+}
+
+.netlify-identity-menu, .netlify-login-container {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  gap: 1em;
+  list-style: none;
+  padding: 0;
+  /* unvisited link */
+  /* visited link */
+  /* mouse over link */
+  /* selected link */
+}
+.netlify-identity-menu a, .netlify-login-container a {
+  text-decoration: none;
+}
+.netlify-identity-menu a:link, .netlify-login-container a:link {
+  color: white;
+}
+.netlify-identity-menu a:visited, .netlify-login-container a:visited {
+  color: white;
+}
+.netlify-identity-menu a:hover, .netlify-login-container a:hover {
+  color: gray;
+}
+.netlify-identity-menu a:active, .netlify-login-container a:active {
+  color: blue;
 }
 
 /* Custom classes */

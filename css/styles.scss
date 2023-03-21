@@ -583,6 +583,7 @@ footer {
     background-color: var(--color-footer-bg);
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 15vh;
@@ -590,6 +591,40 @@ footer {
     padding-top: 1em;
     z-index: 1;
     text-align: center;
+}
+
+.netlify-identity-menu, .netlify-login-container {
+
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    gap: 1em;
+    list-style: none;
+    padding: 0;
+
+    a {
+        text-decoration: none;
+    }
+
+    /* unvisited link */
+    a:link {
+        color: white;
+    }
+    
+    /* visited link */
+    a:visited {
+        color: white;
+    }
+    
+    /* mouse over link */
+    a:hover {
+        color: gray;
+    }
+    
+    /* selected link */
+    a:active {
+        color: blue;
+    }
 }
 
 
