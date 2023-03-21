@@ -37,18 +37,23 @@
 
                 <span class="input-group-text" id="basic-addon1">Search by</span>
 
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                <select class="form-select" id="selectOptions" aria-label="Default select example">
+                    <option value="0">Number</option>
+                    <option value="1">Name</option>
+                    <option value="2">Email</option>
+                    <option value="3">Inquiry</option>
+                    <option value="4">Subject</option>
+                    <option value="5">Message</option>
+                    <option value="6">Company</option>
+                    <option value="7">Phone</option>
+                    <option value="8">Date</option>
                   </select>
 
             </div>
 
             <div class="input-cont mb-3">
 
-                <input type="text" class="form-control" id="myInput" placeholder="Search for names..">
+                <input type="text" class="form-control" id="searchInput" placeholder="Search for names..">
 
             </div>
 
@@ -58,7 +63,7 @@
                     <thead>
                         <tr>
                           <th scope="col">#</th>
-                          <th scope="col">First</th>
+                          <th scope="col">Name</th>
                           <th scope="col">Email</th>
                           <th scope="col">Inquiry</th>
                           <th scope="col">Subject</th>
@@ -80,7 +85,7 @@
 
 
 
-    <script type="text/javascript" src="../js/identity.js"></script>
+    <script type="text/javascript" src="../js/table.js"></script>
     
   </body>
 
