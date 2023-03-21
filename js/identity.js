@@ -1,5 +1,5 @@
 
-//Select Data from Database
+//Get Data from Database
 fetch("/.netlify/functions/getData")
 .then((response) => response.json())
 .then((data) => populateTable(data.rows))
@@ -12,7 +12,7 @@ function populateTable(rows) {
     console.log(rows);
 
 
-    const table = document.getElementById('table');
+    const tableBody = document.getElementById('tbody');
 
     rows.forEach(function(object) {
 
@@ -28,6 +28,10 @@ function populateTable(rows) {
         '<td>' + object.Phone + '</td>' +
         '<td>' + object.DateTime + '</td>';
 
-        table.appendChild(tr);
+        tableBody.appendChild(tr);
     })
 }
+
+//Filter Table
+
+

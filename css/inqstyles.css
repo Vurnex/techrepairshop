@@ -1,0 +1,21 @@
+.inquiries {
+
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.inquiries-container {
+
+    width: 90%;
+}
+
+.input-cont {
+
+    width: 100%;
+}
+
+.search-bar-cont {
+
+    display: flex;
+}
