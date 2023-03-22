@@ -1,6 +1,6 @@
 [[redirects]]
   from = "/pages/inquiries/*"
-  to = "/404"
+  to = "/pages/inquiries/:splat"
   force = true
   status = 200
   conditions = {Role = ["admin"]}
