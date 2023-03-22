@@ -18,7 +18,7 @@ A website for an IT Management Business. This website was created with the purpo
 
 - Bootstrap
 - SASS
-- Netlify (Hosting)
+- Netlify (Hosting & Authentication)
 - PlanetScale (Serverless MySQL Database)
 
 Credit to [Pexels.com](https://www.pexels.com/search/information%20technology/) for the images.
