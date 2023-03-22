@@ -593,6 +593,8 @@ footer {
     text-align: center;
 }
 
+/* Custom Netlify Styling */
+
 .netlify-identity-menu, .netlify-login-container {
 
     display: flex;
@@ -625,6 +627,18 @@ footer {
     a:active {
         color: blue;
     }
+}
+
+@media (max-width: 600px) {
+
+    iframe[style] {
+
+        top: 7em !important;
+        left: 3em !important;
+        width: 80% !important;
+        height: 80% !important;
+    }
+
 }
 
 
