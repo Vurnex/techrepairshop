@@ -7,6 +7,13 @@
     min-height: 100vh;
 }
 
+.header-cont > h1 {
+
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
 .inquiries-container {
 
     width: 90%;
@@ -20,4 +27,9 @@
 .search-bar-cont {
 
     display: flex;
+}
+
+.empty-cont {
+
+    display: none;
 }

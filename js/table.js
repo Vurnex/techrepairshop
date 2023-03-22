@@ -3,14 +3,16 @@
 fetch("/.netlify/functions/getData")
 .then((response) => response.json())
 .then((data) => populateTable(data.rows))
-.catch(function(error) {  
+.catch(function(error) {
+    
+    const tableBodyEmpty = document.getElementById('tableBodyEmpty');
+    tableBodyEmpty.style.display = "block";
       
 });
 
 function populateTable(rows) {
 
-    console.log(rows);
-
+    //console.log(rows);
 
     const tableBody = document.getElementById('tbody');
 

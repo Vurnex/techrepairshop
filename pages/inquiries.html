@@ -11,9 +11,9 @@
 
     <link rel="stylesheet" href="../css/inqstyles.css">
 
-    <!--Netlify Identity (Used for logins)-->
+    <!--Favicon-->
 
-    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <link rel="icon" type="image/x-icon" href="../favicon.png">
 
     <!--Bootstrap-->
 
@@ -21,7 +21,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     
-    <title>Inquiries</title>
+    <title>Recent Inquiries</title>
 
   </head>
 
@@ -30,6 +30,12 @@
     <section class="inquiries">
 
         <div class="inquiries-container">
+
+            <div class="header-cont">
+
+              <h1>Recent Inquiries</h1>
+
+            </div>
 
             <div class="search-bar-cont mb-3">
 
@@ -74,6 +80,13 @@
                     <tbody id="tbody">
                     </tbody>
                 </table>
+
+            </div>
+
+            <div class="empty-cont" id="tableBodyEmpty">
+
+              <p class="text-center">There was a problem retrieving records from the database. 
+                Please try again later.</p>
 
             </div>
 
