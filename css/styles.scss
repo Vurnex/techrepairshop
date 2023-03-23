@@ -4,6 +4,17 @@ html {
     --header-color-second: #e3f2fd;
     --color-main: #f8f9fa;
     --color-secondary: #6c757d;
+    /* ^ Old Colors ^ */
+
+    --header-bg-color-first: #1d1d1d;
+    --header-bg-color-second: white;
+    --header-first-text: white;
+
+    --header-link-color: #ff1515;
+    --section-headers-color: #ff1515;
+    --icons-color: #ff1515;
+
+    --color-main-2: #ff1515;
 
     --color-about-bg: #e9ecef;
     --color-pricing-bg: #ced4da;
@@ -19,8 +30,8 @@ html {
     --color-pricing-list: #F5F4F5;
     --color-prices: #0d6efd;
 
-    --color-cta-first: #f0544f;
-    --color-cta-second: #1e72bd;
+    --color-cta-first: #ff0800cf;
+    --color-cta-second: #212529eb;
 
     --color-footer-bg: #222222;
 
@@ -39,7 +50,8 @@ body {
 
     display: flex;
     justify-content: space-between;
-    background-color: var(--header-color-first);
+    background-color: var(--header-bg-color-first);
+    color: var(--header-first-text);
     padding: var(--padding-sides);
 }
 
@@ -49,6 +61,11 @@ body {
     ul {
 
         list-style: none;
+    }
+
+    ul > li {
+
+        margin-left: 1em;
     }
 }
 
@@ -70,7 +87,7 @@ body {
 
     justify-content: space-between;
     align-items: center;
-    background-color: var(--header-color-second);
+    background-color: var(--header-bg-color-second);
     padding: var(--padding-sides) !important;
     font-weight: bold;
 
@@ -89,6 +106,11 @@ body {
         text-decoration: none;
         text-transform: uppercase;
         font-size: 1.1rem;
+        color: var(--color-main-2);
+        
+        &:hover {
+            color: #480000;
+        }
     }
 
 }
@@ -102,13 +124,14 @@ body {
 
 .logo {
 
-    width: 40px;
+    width: 150px;
     height: auto;
 }
 
 #nav-mobile {
 
     display: none;
+    background-color: var(--header-bg-color-second);
 
     ul {
 
@@ -168,7 +191,7 @@ body {
 
         text-transform: uppercase;
         font-weight: bold;
-        color: var(--color-prices);
+        color: var(--color-main-2);
     }
 
 }
@@ -316,7 +339,7 @@ body {
         border-radius: 30px;
         font-size: 30px;
         margin-bottom: 0.5em;
-        color: var(--bs-blue);
+        color: var(--icons-color);
     }
 }
 
@@ -351,7 +374,7 @@ body {
         padding: 0.5em;
         font-size: 35px;
         margin-bottom: 0.5em;
-        color: var(--bs-blue);
+        color: var(--icons-color);
     }
 
 }
@@ -394,7 +417,7 @@ body {
 
         &:nth-child(3) {
 
-            color: var(--color-prices);
+            color: var(--color-main-2);
         }
     }
 
@@ -436,7 +459,7 @@ body {
 
 .action-container {
 
-    background-image: linear-gradient(135deg, var(--color-cta-first ) 0%, var(--color-cta-second ) 100%);
+    background-image: linear-gradient(358deg, var(--color-cta-first ) 0%, var(--color-cta-second ) 100%);
     border-radius: 20px;
 }
 
@@ -569,7 +592,7 @@ body {
         border-radius: 50px;
         font-size: 35px;
         margin-bottom: 0.5em;
-        color: var(--bs-blue);
+        color: var(--color-main-2);
     }
 }
 
@@ -684,7 +707,6 @@ footer {
     #nav-mobile {
 
         display: flex;
-        background-color: #e3f2fd;
         color: black;
         padding-top: 1em;
         padding-bottom: 1em;
