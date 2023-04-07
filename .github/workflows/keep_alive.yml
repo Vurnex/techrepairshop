@@ -3,7 +3,7 @@
 name: Keep alive cron job
 on:
   schedule:
-    - cron: '0 12 * * *' # daily https://crontab.guru/#0_12_*_*_*
+    - cron: '* * * * *' # daily https://crontab.guru/#0_12_*_*_*
 jobs:
   cron:
     runs-on: ubuntu-latest
@@ -11,4 +11,4 @@ jobs:
       - name: Call endpoint to keep the database alive
         run: |
           curl --request PUT \
-            --url '$ec2fix.netlify.app/.netlify/functions/keepAlive'
+            --url 'ec2fix.netlify.app/.netlify/functions/keepAlive'
