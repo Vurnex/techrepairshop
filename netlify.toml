@@ -6,4 +6,4 @@
   conditions = {Role = ["admin"]}
 
 [functions."keepAlive"]
-schedule = "@hourly"
+schedule = "@daily"
