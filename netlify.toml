@@ -4,3 +4,6 @@
   force = true
   status = 200
   conditions = {Role = ["admin"]}
+
+[functions."keepAlive"]
+schedule = "@hourly"
