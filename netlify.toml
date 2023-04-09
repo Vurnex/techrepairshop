@@ -6,7 +6,7 @@
   conditions = {Role = ["admin"]}
 
 [[redirects]]
-  from = "/.netlify/functions/getData"
+  from = ".netlify/functions/getData"
   to = "/.netlify/functions/getData/:splat"
   force = true
   status = 200
