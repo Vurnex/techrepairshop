@@ -5,12 +5,5 @@
   status = 200
   conditions = {Role = ["admin"]}
 
-[[redirects]]
-  from = ".netlify/functions/getData"
-  to = "/.netlify/functions/getData/:splat"
-  force = true
-  status = 200
-  conditions = {Role = ["admin"]}
-
 [functions."keepAlive"]
 schedule = "@daily"
