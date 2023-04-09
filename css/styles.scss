@@ -43,7 +43,7 @@ html {
 
 body {
 
-    min-width: 450px;
+    min-width: 385px;
 }
 
 .header-container {
@@ -148,7 +148,7 @@ body {
         text-decoration: none;
         text-transform: uppercase;
         font-weight: bold;
-        color: var(--color-prices);
+        color: var(--color-main-2);
     }
 
 
@@ -774,6 +774,11 @@ footer {
 
             width: unset;
         }
+    }
+
+    .pricing-list {
+
+        width: unset;
     }
 
     .contact-left, .contact-right {

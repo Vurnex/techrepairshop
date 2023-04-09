@@ -28,7 +28,7 @@ html {
 }
 
 body {
-  min-width: 450px;
+  min-width: 385px;
 }
 
 .header-container {
@@ -104,7 +104,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  color: var(--color-prices);
+  color: var(--color-main-2);
 }
 
 .intro, .about, .about2, .services, .pricing,
@@ -555,6 +555,9 @@ footer {
     width: 100%;
   }
   .about2-info-cont .card, .serv-info-cont .card {
+    width: unset;
+  }
+  .pricing-list {
     width: unset;
   }
   .contact-left, .contact-right {
